@@ -18,7 +18,6 @@ class ParticipateInForumTest extends TestCase
 
         $this->post('/threads/1/replies', []);
 
-
     }
 
     /** @test */
