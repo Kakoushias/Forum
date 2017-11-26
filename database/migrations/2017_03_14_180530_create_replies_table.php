@@ -13,6 +13,8 @@ class CreateRepliesTable extends Migration
      */
     public function up()
     {
+        if (Schema::hasTable('replies')) return;
+
         Schema::create('replies', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('thread_id');
